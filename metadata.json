@@ -1,0 +1,5 @@
+{
+  "name": "AI News Summarizer Dashboard",
+  "description": "A dashboard to trigger and monitor an automated news aggregation and analysis system. It fetches articles from multiple sources, generates AI-powered comparative summaries, and displays the results.",
+  "requestFramePermissions": []
+}
