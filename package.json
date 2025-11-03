@@ -3,14 +3,27 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "deploy": "wrangler deploy"
+    "dev": "vite",
+    "dev:worker": "wrangler dev worker/index.ts --port 8787",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "wrangler deploy",
+    "deploy:full": "npm run build && wrangler pages deploy dist --project-name=ai-news-summarizer"
   },
   "dependencies": {
     "@google/genai": "^1.28.0",
-    "itty-router": "^4.0.23"
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.1.0",
+    "itty-router": "^4.0.23",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.12"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20230419.0",
+    "@types/node": "^24.10.0",
     "wrangler": "^3.0.0"
   }
 }

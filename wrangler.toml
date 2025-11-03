@@ -1,0 +1,10 @@
+name = "ai-news-summarizer"
+main = "worker/index.ts"
+compatibility_date = "2024-01-01"
+
+account_id = "958e127c7d64013443a65ce072226b4a"
+
+# This binds the API_KEY environment variable to the worker
+# You'll need to set this as a secret: wrangler secret put API_KEY
+[vars]
+# API_KEY will be set as a secret, not here
